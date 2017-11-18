@@ -28,7 +28,7 @@
 		const auth = firebase.auth();
 		// Sign In
 		const promise = auth.signInWithEmailAndPassword(email, pass);
-		promise.catch(e => "Sign in error: " + error.innerText = e.message);
+		promise.catch(e => error.innerText = "Sign in error: " + e.message);
 	});
 
 	// Add signup event
